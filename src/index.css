@@ -1,0 +1,43 @@
+.container-fluid-rectangle {
+  height: 90px;
+  box-shadow: 0 2px 4px 0 rgba(0, 21, 240, 0.1);
+  background-color: #ffffff;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 19px;
+  font-family: Nunito;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+  position: relative;
+  top: 15px;
+}
+.log-out-button {
+  border-radius: 25px;
+  background-color: #f2f6ff;
+  color: blue;
+  border: 2px #f2f6ff;
+  padding: 15px 40px;
+  font-family: Nunito;
+  font-size: 18px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #234cad;
+}
+.item {
+  font-size: 18px;
+  font-family: Nunito;
+
+  color: #000000;
+}
