@@ -1,7 +1,6 @@
 import { MainMenuItem } from "./MainMenu";
 
-
- interface MainMenuProperties {
-    items: MainMenuItem[];
-  }
-  export default MainMenuProperties;
+interface MainMenuProperties {
+  items: MainMenuItem[];
+}
+export default MainMenuProperties;

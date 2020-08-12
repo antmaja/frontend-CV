@@ -2,7 +2,6 @@ import React from "react";
 import { Nav } from "react-bootstrap";
 import MainMenuProperties from "./interface";
 
-
 export class MainMenuItem {
   text: string = "";
   link: string = "";
@@ -12,8 +11,6 @@ export class MainMenuItem {
     this.link = link;
   }
 }
-
-
 
 class MainMenu extends React.Component<MainMenuProperties> {
   render() {

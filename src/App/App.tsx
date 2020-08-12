@@ -1,14 +1,15 @@
 import React from "react";
 
-import "./App.css";
-import Header from "./Header/header";
+import Header from "../Header/header";
 
 
 
 class App extends React.Component {
   render(){
   return (
+    <div className="container-fluid-cv">
     <Header></Header>
+    </div>
   );
 }
 }
