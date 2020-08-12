@@ -1,15 +1,18 @@
 import React from "react";
 import MainMenu from "../MainMenu/MainMenu";
 import { MenuItems } from "./items";
-import { Row, Col } from "react-bootstrap";
+//import { Row, Col } from "react-bootstrap";
+
+
 
 class Header extends React.Component {
   render() {
     return (
       <div>
-        <Row>
-          <Col>
+       
+         
             <div className="container-fluid-rectangle">
+             
               <div className="header">
                 <a className="header-title cursor-pointer item" href="/">
                   Ant Colony
@@ -22,8 +25,8 @@ class Header extends React.Component {
                 </div>
               </div>
             </div>
-          </Col>
-        </Row>
+         
+        
       </div>
     );
   }

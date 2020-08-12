@@ -7,12 +7,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="container-fluid-cv">
-          <Header></Header>
-        </div>
+        <Header></Header>
         <Container>
-        <CreateButton></CreateButton>
-          
+            <CreateButton></CreateButton>
         </Container>
       </div>
     );
