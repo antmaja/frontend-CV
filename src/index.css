@@ -32,11 +32,65 @@ a {
   font-family: Nunito;
   font-size: 18px;
   letter-spacing: normal;
-
   color: #234cad;
 }
 .item {
   font-size: 18px;
   font-family: Nunito;
   color: #000000;
+}
+.preview-button {
+  width: 170px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+  font-family: Nunito;
+  position: relative;
+  top:30px;
+}
+.container-preview {
+  position: absolute;
+  top: 185px;
+  margin: 5px;
+}
+.container-button {
+  position: relative;
+  top: 170px;
+}
+.container-save {
+  position: absolute;
+  top: 170px;
+  left: 400px;
+}
+.button {
+  width: 170px;
+  height: 50px;
+  font-family: Nunito;
+  color: #ffffff;
+  margin: 5px;
+  position: relative;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
+}
+.button-save {
+  width: 220px;
+  height: 50px;
+  font-family: Nunito;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, blue, blue 98%);
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin: 5px;
 }

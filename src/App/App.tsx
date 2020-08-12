@@ -1,16 +1,21 @@
 import React from "react";
-
 import Header from "../Header/header";
-
-
+import { Container } from "react-bootstrap";
+import CreateButton from "../Button/Button";
 
 class App extends React.Component {
-  render(){
-  return (
-    <div className="container-fluid-cv">
-    <Header></Header>
-    </div>
-  );
-}
+  render() {
+    return (
+      <div>
+        <div className="container-fluid-cv">
+          <Header></Header>
+        </div>
+        <Container>
+        <CreateButton></CreateButton>
+          
+        </Container>
+      </div>
+    );
+  }
 }
 export default App;
