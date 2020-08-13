@@ -10,19 +10,21 @@
   font-size: 19px;
   font-family: Nunito;
 }
+
 a {
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 10%;
-  margin-top: 20px;
-  
+  padding-top: 20px;
 }
+
 .log-out-button {
   border-radius: 25px;
   background-color: #f2f6ff;
@@ -34,11 +36,13 @@ a {
   letter-spacing: normal;
   color: #234cad;
 }
+
 .item {
   font-size: 18px;
   font-family: Nunito;
   color: #000000;
 }
+
 .preview-button {
   width: 170px;
   height: 50px;
@@ -53,22 +57,26 @@ a {
   border: 1px solid blue;
   font-family: Nunito;
   position: relative;
-  top:30px;
+  top:15px;
 }
+
 .container-preview {
   position: absolute;
   top: 185px;
   margin: 5px;
 }
+
 .container-button {
   position: relative;
   top: 170px;
 }
+
 .container-save {
   position: absolute;
   top: 170px;
   left: 400px;
 }
+
 .button {
   width: 170px;
   height: 50px;
@@ -79,6 +87,7 @@ a {
   border-radius: 4px;
   background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
 }
+
 .button-save {
   width: 220px;
   height: 50px;
