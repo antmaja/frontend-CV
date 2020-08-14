@@ -10,18 +10,18 @@ class CreateButton extends React.Component {
         <div className="container-preview">
           <Preview></Preview>
         </div>
-        <Row>
-          <Col>
-            <div className="container-button">
+        <div className="container-button">
+          <Row>
+            <Col md={9}>
               <button className="button">Print Cv</button>
               <button className="button">Download PDF</button>
               <button className="button">Send link</button>
-            </div>
-          </Col>
-          <Col>
-            <Save></Save>
-          </Col>
-        </Row>
+            </Col>
+            <Col md={3}>
+              <Save></Save>
+            </Col>
+          </Row>
+        </div>
       </div>
     );
   }
