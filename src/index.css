@@ -43,8 +43,8 @@ a {
 }
 
 .preview-button {
-  min-width: 170px;
-  min-height: 50px;
+  min-width: 10.625rem;
+  min-height: 3.125rem;
   border-radius: 4px;
   border: none;
   text-align: center;
@@ -58,13 +58,13 @@ a {
 }
 
 .container-preview {
-  padding-top: 100px;
-  margin: 5px;
+  margin-top: 100px;
+  margin-left: 5px;
 }
 
 .button {
-  min-width: 170px;
-  min-height: 50px;
+  min-width: 10.625rem;
+  min-height: 3.125rem;
   font-family: Nunito;
   color: #ffffff;
   margin: 5px;
@@ -73,8 +73,8 @@ a {
 }
 
 .button-save {
-  min-width: 220px;
-  min-height: 50px;
+  min-width: 13.75rem;
+  min-height: 3.125rem;
   font-family: Nunito;
   border-radius: 4px;
   background-image: linear-gradient(to bottom, blue, blue 98%);
