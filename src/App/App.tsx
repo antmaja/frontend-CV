@@ -24,11 +24,11 @@ class App extends React.Component {
             </Row>
           </div>
           <div className="information-resume">
-          <Row>
-            <Col>
-              <Resume />
-            </Col>
-          </Row>
+            <Row>
+              <Col>
+                <Resume />
+              </Col>
+            </Row>
           </div>
         </Container>
       </div>

@@ -20,6 +20,7 @@ class Resume extends React.Component {
     return (
       <div>
         <textarea
+          style={{ width: "100%" }}
           className="resume-input"
           placeholder="Add a qoute about the Resume owner which summs up goals/strenghts"
           id="resume"

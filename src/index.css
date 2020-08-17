@@ -34,12 +34,19 @@ a {
   font-size: 18px;
   letter-spacing: normal;
   color: #234cad;
+  outline: none;
+  outline-style: none;
+  border: none;
+}
+.log-out-button:focus {
+  outline: none;
 }
 
 .item {
   font-size: 18px;
   font-family: Nunito;
   color: #000000;
+  
 }
 
 .preview-button {
@@ -56,6 +63,9 @@ a {
   border: 1px solid blue;
   font-family: Nunito;
 }
+.preview-button:focus {
+  outline: none;
+}
 
 .container-preview {
   margin-top: 100px;
@@ -70,6 +80,18 @@ a {
   margin: 5px;
   border-radius: 4px;
   background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
+}
+
+.button:focus {
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+textarea:focus::placeholder {
+  color: transparent;
 }
 
 .button-save {
@@ -88,8 +110,6 @@ a {
 }
 
 .full-name-input {
-  max-width: 36.25rem;
-  max-height: 4.375rem;
   font-size: 58px;
   font-family: Nunito;
   border: none;
@@ -106,7 +126,7 @@ a {
 }
 
 .email-input {
-  max-width: 19.0625rem;
+  max-width: 22.1625rem;
   max-height: 3.6875rem;
   opacity: 0.5;
   font-size: 28px;
@@ -125,28 +145,34 @@ a {
 }
 
 .resume-input {
-  min-width: 61.8125rem;
-  min-height: 9.75rem;
-  border: none;
-  border-radius: none;
+  margin: auto;
   font-size: 58px;
-  overflow: hidden;
-  resize: none;
   font-family: Nunito;
+  border: none;
+  resize: none;
 }
+
+textarea, input, textarea:focus, input:focus{
+  outline: none;
+}
+
+.div-resume {
+  width: 100%;
+}
+
 
 .resume-input::placeholder {
   color: #04143a;
 }
 
-.box-add-position {
+.content-box {
   max-width: 21.895rem;
   max-height: 4.375rem;
   border-radius: 12.5px;
   background-color: #f2f6ff;
 }
 
-.add-position {
+.add-position-input {
   border-radius: 12.5px;
   background-color: #f2f6ff;
   border: 2px #f2f6ff;
@@ -161,9 +187,11 @@ a {
   letter-spacing: normal;
   text-align: center;
   resize: none;
+  outline: none;
+  color: blue;
 }
 
-.add-position::placeholder {
+.add-position-input::placeholder {
   color: blue;
 }
 
@@ -174,3 +202,7 @@ a {
 .information-resume {
   margin-top: 40px;
 }
+
+
+
+

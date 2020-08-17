@@ -24,14 +24,16 @@ class AddNameEmail extends React.Component {
   render() {
     return (
       <div>
-        <input
-          placeholder="ADD Name Surname"
-          type="text"
-          className="full-name-input"
-          id="name"
-          value={this.state.name}
-          onChange={(event) => this.handleInputNameChange(event as any)}
-        />
+        <div className="div">
+          <input
+            placeholder="ADD Name Surname"
+            type="text"
+            className="full-name-input"
+            id="name"
+            value={this.state.name}
+            onChange={(event) => this.handleInputNameChange(event)}
+          />
+        </div>
         {
           <input
             placeholder="Add your Email here"
@@ -39,7 +41,7 @@ class AddNameEmail extends React.Component {
             className="email-input"
             id="email"
             value={this.state.email}
-            onChange={(event) => this.handleInputNameChange(event as any)}
+            onChange={(event) => this.handleInputNameChange(event)}
           />
         }
       </div>

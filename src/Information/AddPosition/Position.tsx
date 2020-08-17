@@ -18,13 +18,13 @@ class Position extends React.Component {
   render() {
     return (
       <div>
-        <div className="box-add-position">
+        <div className="content-box">
           <div>
             <input
-              className="add-position"
+              className="add-position-input"
               placeholder="Add Position"
               value={this.state.position}
-              onChange={(event) => this.handleInputPositionChange(event as any)}
+              onChange={(event) => this.handleInputPositionChange(event)}
             />
           </div>
         </div>
