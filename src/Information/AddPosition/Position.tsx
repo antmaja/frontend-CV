@@ -18,7 +18,7 @@ class Position extends React.Component {
   render() {
     return (
       <div>
-        <div className="content-box">
+        <div className="content-container">
           <div>
             <input
               className="add-position-input"

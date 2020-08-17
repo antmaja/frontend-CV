@@ -38,7 +38,16 @@ a {
   outline-style: none;
   border: none;
 }
-.log-out-button:focus {
+.full-name-input::placeholder {
+  color: #04143a;
+}
+
+.log-out-button,
+.preview-button:focus {
+  outline: none;
+}
+
+.button:focus {
   outline: none;
 }
 
@@ -46,7 +55,6 @@ a {
   font-size: 18px;
   font-family: Nunito;
   color: #000000;
-  
 }
 
 .preview-button {
@@ -63,9 +71,6 @@ a {
   border: 1px solid blue;
   font-family: Nunito;
 }
-.preview-button:focus {
-  outline: none;
-}
 
 .container-preview {
   margin-top: 100px;
@@ -80,10 +85,6 @@ a {
   margin: 5px;
   border-radius: 4px;
   background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
-}
-
-.button:focus {
-  outline: none;
 }
 
 input:focus::placeholder {
@@ -121,7 +122,7 @@ textarea:focus::placeholder {
   border-radius: none;
 }
 
-.full-name-input::placeholder {
+.email-input::placeholder {
   color: #04143a;
 }
 
@@ -140,10 +141,6 @@ textarea:focus::placeholder {
   letter-spacing: 1px;
 }
 
-.email-input::placeholder {
-  color: #04143a;
-}
-
 .resume-input {
   margin: auto;
   font-size: 58px;
@@ -152,7 +149,10 @@ textarea:focus::placeholder {
   resize: none;
 }
 
-textarea, input, textarea:focus, input:focus{
+textarea,
+input,
+textarea:focus,
+input:focus {
   outline: none;
 }
 
@@ -160,12 +160,11 @@ textarea, input, textarea:focus, input:focus{
   width: 100%;
 }
 
-
 .resume-input::placeholder {
   color: #04143a;
 }
 
-.content-box {
+.content-container {
   max-width: 21.895rem;
   max-height: 4.375rem;
   border-radius: 12.5px;
@@ -202,7 +201,3 @@ textarea, input, textarea:focus, input:focus{
 .information-resume {
   margin-top: 40px;
 }
-
-
-
-
