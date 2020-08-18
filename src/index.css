@@ -34,6 +34,22 @@ a {
   font-size: 18px;
   letter-spacing: normal;
   color: #234cad;
+  outline: none;
+  outline-style: none;
+  border: none;
+}
+
+.full-name-input::placeholder {
+  color: #04143a;
+}
+
+.log-out-button,
+.preview-button:focus {
+  outline: none;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .item {
@@ -72,6 +88,14 @@ a {
   background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
 }
 
+input:focus::placeholder {
+  color: transparent;
+}
+
+textarea:focus::placeholder {
+  color: transparent;
+}
+
 .button-save {
   min-width: 13.75rem;
   min-height: 3.125rem;
@@ -85,4 +109,96 @@ a {
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
+}
+
+.full-name-input {
+  font-size: 58px;
+  font-family: Nunito;
+  border: none;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  border-radius: none;
+}
+
+.email-input::placeholder {
+  color: #04143a;
+}
+
+.email-input {
+  max-width: 22.1625rem;
+  max-height: 3.6875rem;
+  opacity: 0.5;
+  font-size: 28px;
+  font-family: Nunito;
+  border: none;
+  border-radius: none;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: 1px;
+}
+
+.resume-input {
+  margin: auto;
+  font-size: 58px;
+  font-family: Nunito;
+  border: none;
+  resize: none;
+}
+
+textarea,
+input,
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.div-resume {
+  width: 100%;
+}
+
+.resume-input::placeholder {
+  color: #04143a;
+}
+
+.content-container {
+  max-width: 21.895rem;
+  max-height: 4.375rem;
+  border-radius: 12.5px;
+  background-color: #f2f6ff;
+}
+
+.add-position-input {
+  border-radius: 12.5px;
+  background-color: #f2f6ff;
+  border: 2px #f2f6ff;
+  min-width: 21.895rem;
+  min-height: 4.375rem;
+  font-family: Nunito;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.61;
+  letter-spacing: normal;
+  text-align: center;
+  resize: none;
+  outline: none;
+  color: blue;
+}
+
+.add-position-input::placeholder {
+  color: blue;
+}
+
+.content-information {
+  margin-top: 90px;
+}
+
+.information-resume {
+  margin-top: 40px;
 }
