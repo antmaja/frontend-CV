@@ -1,3 +1,30 @@
+@font-face {
+  font-family: Nunito;
+  src: url(./assets/fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: Nunito-Bold;
+  src: url(./assets/fonts/Nunito-Bold.ttf);
+}
+.button:focus {
+  outline: none;
+}
+.button-save:focus {
+  outline: none;
+}
+.log-out-button:focus {
+  outline: none;
+}
+.delete:focus {
+  outline: none;
+}
+.add-another:focus {
+  outline: none;
+}
+.preview-button:focus {
+  outline: none;
+}
 .container-fluid-rectangle {
   min-height: 90px;
   box-shadow: 0 2px 4px 0 rgba(0, 21, 240, 0.1);
@@ -43,19 +70,11 @@ a {
   color: #04143a;
 }
 
-.log-out-button,
-.preview-button:focus {
-  outline: none;
-}
-
-.button:focus {
-  outline: none;
-}
-
 .item {
   font-size: 18px;
-  font-family: Nunito;
+  font-family: Nunito-Bold;
   color: #000000;
+  text-decoration: none;
 }
 
 .preview-button {
@@ -157,10 +176,6 @@ input:focus {
   outline: none;
 }
 
-.div-resume {
-  width: 100%;
-}
-
 .resume-input::placeholder {
   color: #04143a;
 }
@@ -201,4 +216,98 @@ input:focus {
 
 .information-resume {
   margin-top: 40px;
+}
+
+.add-photo {
+  min-width: 112px;
+  height: 16px;
+  font-family: Nunito;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  width: 118.7px;
+  height: 31px;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
+  position: absolute;
+  top: 80%;
+  left: 30%;
+}
+
+.image-container {
+  width: 25%;
+  min-width: 295px;
+  height: 295px;
+  border-radius: 16.7px;
+  margin-top: 90px;
+  position: relative;
+  background-color: #eef0f7;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.delete {
+  border: none;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
+  color: #ffffff;
+  position: absolute;
+  left: 90%;
+  top: 5%;
+}
+
+.basic-information {
+  margin-top: 80px;
+}
+
+.item-name {
+  font-size: 26px;
+  font-family: Nunito-Bold;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #04143a;
+  top: 30px;
+}
+
+.add-another {
+  min-width: 118.7px;
+  height: 31px;
+  font-family: Nunito;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.description-select {
+  width: 85%;
+  height: 32px;
+  border-radius: 4px;
+  border: solid 1px #ced0da;
+  background-color: #ffffff;
+}
+
+.padding-top-50 {
+  padding-top: 50px;
+}
+
+.content-radio label {
+  margin: 5px;
+}
+
+.datepicker {
+  min-width: 292px;
+  height: 32px;
+  border-radius: 4px;
+  border: solid 1px #ced0da;
+  background-color: #ffffff;
 }
