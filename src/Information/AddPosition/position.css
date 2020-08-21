@@ -1,0 +1,29 @@
+.content-container {
+    max-width: 21.895rem;
+    max-height: 4.375rem;
+    border-radius: 12.5px;
+    background-color: #f2f6ff;
+  }
+
+  .add-position-input {
+    border-radius: 12.5px;
+    background-color: #f2f6ff;
+    border: 2px #f2f6ff;
+    min-width: 21.895rem;
+    min-height: 4.375rem;
+    font-family: Nunito;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.61;
+    letter-spacing: normal;
+    text-align: center;
+    resize: none;
+    outline: none;
+    color: blue;
+  }
+
+  .add-position-input::placeholder {
+    color: blue;
+  }

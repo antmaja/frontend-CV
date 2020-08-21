@@ -1,5 +1,6 @@
 import React from "react";
 import ImageState from "./interfaceImage";
+import "./image.css";
 
 class AddImage extends React.Component {
   state: ImageState;
@@ -28,7 +29,7 @@ class AddImage extends React.Component {
   };
 
   deleteImage = () => {
-    this.setState({ imagePreviewUrl: "" });
+    this.setState({ imagePreviewUrl: " " });
   };
 
   render() {

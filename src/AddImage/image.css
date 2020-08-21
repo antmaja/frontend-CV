@@ -1,0 +1,46 @@
+.add-photo {
+  min-width: 112px;
+  height: 16px;
+  font-family: Nunito;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  width: 118.7px;
+  height: 31px;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
+  position: absolute;
+  top: 80%;
+  left: 30%;
+}
+
+.image-container {
+  width: 25%;
+  min-width: 295px;
+  height: 295px;
+  border-radius: 16.7px;
+  margin-top: 90px;
+  position: relative;
+  background-color: #eef0f7;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.delete {
+  border: none;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
+  color: #ffffff;
+  position: absolute;
+  left: 90%;
+  top: 5%;
+}

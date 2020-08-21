@@ -1,6 +1,6 @@
 import React from "react";
 import PositionState from "./interfacePosition";
-
+import "./position.css";
 class Position extends React.Component {
   state: PositionState;
 

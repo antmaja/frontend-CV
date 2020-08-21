@@ -1,6 +1,6 @@
 import React from "react";
 import AddNameEmailState from "./interfaceNameEmail";
-
+import "./input.css";
 class AddNameEmail extends React.Component {
   state: AddNameEmailState;
 
@@ -24,8 +24,7 @@ class AddNameEmail extends React.Component {
   render() {
     return (
       <div>
-        <div className="div">
-          <input
+        <input
             placeholder="ADD Name Surname"
             type="text"
             className="full-name-input"
@@ -33,7 +32,7 @@ class AddNameEmail extends React.Component {
             value={this.state.name}
             onChange={(event) => this.handleInputNameChange(event)}
           />
-        </div>
+       
         {
           <input
             placeholder="Add your Email here"

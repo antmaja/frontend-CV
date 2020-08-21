@@ -1,5 +1,6 @@
 import React from "react";
 import LanguageState from "./interfaceLanguage";
+import "./language.css";
 
 class LanguageSkills extends React.Component {
   state: LanguageState;

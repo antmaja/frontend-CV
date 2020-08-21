@@ -1,0 +1,50 @@
+.button {
+  min-width: 10.625rem;
+  min-height: 3.125rem;
+  font-family: Nunito;
+  color: #ffffff;
+  margin: 5px;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
+}
+
+.preview-button {
+  min-width: 10.625rem;
+  min-height: 3.125rem;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+  font-family: Nunito;
+}
+
+.button-save {
+  min-width: 13.75rem;
+  min-height: 3.125rem;
+  font-family: Nunito;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, blue, blue 98%);
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.container-preview {
+  margin-top: 100px;
+  margin-left: 5px;
+}
+
+.button:focus,
+.preview-button:focus,
+.button-save:focus {
+  outline: none;
+}

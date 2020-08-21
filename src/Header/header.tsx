@@ -1,6 +1,7 @@
 import React from "react";
 import MainMenu from "../MainMenu/MainMenu";
 import { MenuItems } from "./items";
+import "./header.css";
 
 class Header extends React.Component {
   render() {
