@@ -1,5 +1,5 @@
 import React from "react";
-import ImageStateInterface from "./interfaceImage";
+import ImageStateInterface from "./imageStateInterface";
 
 class AddImage extends React.Component {
   state: ImageStateInterface;

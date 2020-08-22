@@ -1,6 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import PersonalInfoStateInterface from "./interfacePersonalState";
+import PersonalInfoStateInterface from "./personalInfoStateInterface";
 import { Calendar } from "./Calendar";
 
 class PersonalInfro extends React.Component {
