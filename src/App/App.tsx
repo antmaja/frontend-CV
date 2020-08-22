@@ -5,11 +5,16 @@ import CreateButton from "../Button/Button";
 import AddNameEmail from "../Information/AddNameEmail/NameEmail";
 import Resume from "../Information/AddResume/Resume";
 import Position from "../Information/AddPosition/Position";
+import AddImage from "../AddImage/AddImage";
+import PersonalInfo from "../BasicInformation/PersonalInfo/PersonalInfo";
+import Experience from "../BasicInformation/Experience/Experience";
+import LanguageSkills from "../BasicInformation/LanguageSkills/LanguageSkills";
 
 class App extends React.Component {
   render() {
     return (
       <div>
+        
         <Header />
         <Container>
           <CreateButton />
@@ -30,6 +35,16 @@ class App extends React.Component {
               </Col>
             </Row>
           </div>
+          <Row>
+            <Col md={4}>
+              <AddImage></AddImage>
+              <div className="basic-information">
+                <PersonalInfo></PersonalInfo>
+                <Experience></Experience>
+                <LanguageSkills></LanguageSkills>
+              </div>
+            </Col>
+          </Row>
         </Container>
       </div>
     );
