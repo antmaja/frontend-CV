@@ -1,5 +1,5 @@
 import React from "react";
-import PositionStateInterface from "./positionStateInterface";
+import PositionStateInterface from "./PositionStateInterface";
 
 class Position extends React.Component {
   state: PositionStateInterface;

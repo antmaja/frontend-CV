@@ -1,9 +1,9 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import ExperienceStateInterface from "./experienceStateInterface";
+import ExperienceStateInterface from "./ExperienceStateInterface";
 
 class Experience extends React.Component {
-  state: ExperienceStateInterface;
+  state:ExperienceStateInterface;
 
   constructor(props: Readonly<{}>) {
     super(props);

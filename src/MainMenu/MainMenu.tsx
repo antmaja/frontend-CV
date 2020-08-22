@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
-import MainMenuProperties from "./interfaceMainMenuProperties";
+import MainMenuProperties from "./MainMenuProperties";
 
 export class MainMenuItem {
   text: string = "";

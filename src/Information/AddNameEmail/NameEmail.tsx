@@ -1,5 +1,5 @@
 import React from "react";
-import AddNameEmailStateInterface from "./addNameEmailStateInterface";
+import AddNameEmailStateInterface from "./AddNameEmailStateInterface";
 
 class AddNameEmail extends React.Component {
   state: AddNameEmailStateInterface;
