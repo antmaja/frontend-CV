@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap";
 import PersonalInfoStateInterface from "./PersonalInfoStateInterface";
 import { Calendar } from "./Calendar";
 
-class PersonalInfro extends React.Component {
+class PersonalInfo extends React.Component {
   state: PersonalInfoStateInterface;
 
   constructor(props: Readonly<{}>) {
@@ -51,4 +51,4 @@ class PersonalInfro extends React.Component {
   }
 }
 
-export default PersonalInfro;
+export default PersonalInfo;
