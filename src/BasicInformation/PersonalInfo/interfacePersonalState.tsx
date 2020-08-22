@@ -1,5 +1,5 @@
-interface PersonalInfoState {
+interface PersonalInfoStateInterface {
   born: string;
   birth: string;
 }
-export default PersonalInfoState;
+export default PersonalInfoStateInterface;

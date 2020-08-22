@@ -1,4 +1,4 @@
-interface PositionState {
+interface PositionStateInterface {
   position: string;
 }
-export default PositionState;
+export default PositionStateInterface;

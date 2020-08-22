@@ -1,8 +1,8 @@
 import React from "react";
-import LanguageState from "./interfaceLanguage";
+import LanguageStateInterface from "./interfaceLanguage";
 
 class LanguageSkills extends React.Component {
-  state: LanguageState;
+  state: LanguageStateInterface;
 
   constructor(props: Readonly<{}>) {
     super(props);

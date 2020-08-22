@@ -1,5 +1,5 @@
-interface ImageState {
+interface ImageStateInterface {
   file: string;
   imagePreviewUrl: string;
 }
-export default ImageState;
+export default ImageStateInterface;

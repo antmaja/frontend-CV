@@ -1,5 +1,5 @@
-interface LanguageState {
+interface LanguageStateInterface {
   select: string;
   selected: string;
 }
-export default LanguageState;
+export default LanguageStateInterface;

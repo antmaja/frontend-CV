@@ -1,5 +1,5 @@
-interface AddNameEmailState {
+interface AddNameEmailStateInterface {
   name: string;
   email: string;
 }
-export default AddNameEmailState;
+export default AddNameEmailStateInterface;

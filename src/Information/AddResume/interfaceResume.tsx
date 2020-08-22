@@ -1,4 +1,4 @@
-interface ResumeState {
+interface ResumeStateInterface {
   resume: string;
 }
-export default ResumeState;
+export default ResumeStateInterface;
