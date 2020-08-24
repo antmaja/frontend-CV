@@ -1,9 +1,10 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 import ExperienceStateInterface from "./ExperienceStateInterface";
+import DuplicateExperience from "../../DuplicateComponents/DuplicateExperience/DuplicateExperience";
 
 class Experience extends React.Component {
-  state:ExperienceStateInterface;
+  state: ExperienceStateInterface;
 
   constructor(props: Readonly<{}>) {
     super(props);
@@ -35,7 +36,6 @@ class Experience extends React.Component {
               value={this.state.years}
               onChange={(event) => this.handleInputYearsChange(event as any)}
             />
-
             <Form.Label style={{ paddingTop: "20px" }}>Position</Form.Label>
             <Form.Control
               type="text"
@@ -46,10 +46,7 @@ class Experience extends React.Component {
             />
           </Form.Group>
         </Form.Row>
-
-        
-
-        <button className="add-another">Add Another</button>
+        <DuplicateExperience></DuplicateExperience>
       </div>
     );
   }

@@ -1,9 +1,9 @@
 import React from "react";
 import LanguageSkillStateInterface from "./LanguageSkillStateInterface";
-
+import DuplicateLanguageSkill from "../../DuplicateComponents/DuplicateLanguageSkill/DuplicateLanguageSkill";
 
 class LanguageSkills extends React.Component {
- state:LanguageSkillStateInterface;
+  state: LanguageSkillStateInterface;
 
   constructor(props: Readonly<{}>) {
     super(props);
@@ -97,7 +97,7 @@ class LanguageSkills extends React.Component {
               </div>
             </form>
             <br />
-            <button className="add-another">Add Another</button>
+            <DuplicateLanguageSkill></DuplicateLanguageSkill>
           </div>
         </div>
       </div>
