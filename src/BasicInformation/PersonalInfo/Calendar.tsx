@@ -3,7 +3,9 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import CalendarStateInterface from "./CalendarStateInterface";
 
-export class Calendar extends React.Component<{}, CalendarStateInterface> {
+
+
+export class Calendar extends React.Component<{},CalendarStateInterface > {
   constructor(props: Readonly<{}>) {
     super(props);
     this.state = {
