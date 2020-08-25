@@ -1,4 +1,4 @@
 interface CalendarStateInterface {
-    startDate: Date;
-  }
-  export default CalendarStateInterface;
+  startDate: Date;
+}
+export default CalendarStateInterface;

@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap";
 import ExperienceStateInterface from "./ExperienceStateInterface";
 
 class Experience extends React.Component {
-  state:ExperienceStateInterface;
+  state: ExperienceStateInterface;
 
   constructor(props: Readonly<{}>) {
     super(props);
@@ -46,8 +46,6 @@ class Experience extends React.Component {
             />
           </Form.Group>
         </Form.Row>
-
-        
 
         <button className="add-another">Add Another</button>
       </div>

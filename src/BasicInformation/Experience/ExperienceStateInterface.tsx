@@ -1,5 +1,5 @@
 interface ExperienceStateInterface {
-    years: string;
-    position: string;
-  }
-  export default ExperienceStateInterface;
+  years: string;
+  position: string;
+}
+export default ExperienceStateInterface;
