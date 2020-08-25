@@ -1,8 +1,9 @@
 import React from "react";
-import PositionState from "./interfacePosition";
 import "./position.css";
+import PositionStateInterface from "./PositionStateInterface";
+
 class Position extends React.Component {
-  state: PositionState;
+  state: PositionStateInterface;
 
   constructor(props: Readonly<{}>) {
     super(props);

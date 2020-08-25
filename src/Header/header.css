@@ -4,6 +4,13 @@
   background-color: #ffffff;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
 .nav-link {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -15,13 +22,6 @@ a {
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10%;
 }
 
 .log-out-button {

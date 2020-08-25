@@ -1,9 +1,9 @@
 import React from "react";
-import ImageState from "./interfaceImage";
 import "./image.css";
+import ImageStateInterface from "./ImageStateInterface";
 
 class AddImage extends React.Component {
-  state: ImageState;
+  state: ImageStateInterface;
   fileInput: any;
 
   constructor(props: Readonly<{}>) {

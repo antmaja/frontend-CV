@@ -1,9 +1,9 @@
 import React from "react";
-import ResumeState from "./interfaceResume";
 import "./resume.css";
+import ResumeStateInterface from "./ResumeStateInterface";
 
 class Resume extends React.Component {
-  state: ResumeState;
+  state: ResumeStateInterface;
 
   constructor(props: Readonly<{}>) {
     super(props);

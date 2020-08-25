@@ -9,3 +9,7 @@
 textarea:focus::placeholder {
   color: transparent;
 }
+
+.resume-input::placeholder {
+  color: #04143a;
+}

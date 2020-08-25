@@ -8,6 +8,10 @@
   src: url(./assets/fonts/Nunito-Bold.ttf);
 }
 
+.delete:focus .add-another {
+  outline: none;
+}
+
 .add-another:focus {
   outline: none;
 }
@@ -26,23 +30,22 @@ input:focus {
   outline: none;
 }
 
-.resume-input::placeholder {
-  color: #04143a;
-}
-
-.content-container {
-  max-width: 21.895rem;
-  max-height: 4.375rem;
-  border-radius: 12.5px;
-  background-color: #f2f6ff;
-}
-
 .content-information {
   margin-top: 90px;
 }
 
 .information-resume {
   margin-top: 40px;
+}
+
+.delete {
+  border: none;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
+  color: #ffffff;
+  position: absolute;
+  left: 90%;
+  top: 5%;
 }
 
 .basic-information {

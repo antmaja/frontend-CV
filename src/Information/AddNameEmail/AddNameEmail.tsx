@@ -1,8 +1,9 @@
 import React from "react";
-import AddNameEmailState from "./interfaceNameEmail";
-import "./input.css";
+import "./user.css";
+import AddNameEmailStateInterface from "./AddNameEmailStateInterface";
+
 class AddNameEmail extends React.Component {
-  state: AddNameEmailState;
+  state: AddNameEmailStateInterface;
 
   constructor(props: Readonly<{}>) {
     super(props);
@@ -32,15 +33,14 @@ class AddNameEmail extends React.Component {
           value={this.state.name}
           onChange={(event) => this.handleInputNameChange(event)}
         />
-         <input
-            placeholder="Add your Email here"
-            type="text"
-            className="email-input"
-            id="email"
-            value={this.state.email}
-            onChange={(event) => this.handleInputNameChange(event)}
-          />
-        
+        <input
+          placeholder="Add your Email here"
+          type="text"
+          className="email-input"
+          id="email"
+          value={this.state.email}
+          onChange={(event) => this.handleInputNameChange(event)}
+        />
       </div>
     );
   }
