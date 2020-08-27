@@ -1,36 +1,81 @@
 import React from "react";
 import LanguageSkillStateInterface from "./LanguageSkillStateInterface";
 
-
 class LanguageSkills extends React.Component {
- state:LanguageSkillStateInterface;
+  state: LanguageSkillStateInterface;
 
   constructor(props: Readonly<{}>) {
     super(props);
 
     this.state = {
-      select: "",
-      selected: "",
+      arrayLanguageSkill: [
+        {
+          select: "",
+          selectRadio: "",
+        },
+      ],
     };
   }
 
-  handleSelectChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    this.setState({ select: event.target.value });
+  handleSelectChange = (id: number) => (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    const newSelect = this.state.arrayLanguageSkill.map((language, idx) => {
+      if (id !== idx) return language;
+      return {
+        ...language,
+        select: event.target.value,
+      };
+    });
+    this.setState({ arrayLanguageSkill: newSelect });
   };
-  onValueChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    this.setState({ selected: event.target.value });
+
+  onValueChange = (id: number) => (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    const newSelectRadio = this.state.arrayLanguageSkill.map(
+      (language, idx) => {
+        if (id !== idx) return language;
+        return {
+          ...language,
+          selectRadio: event.target.value,
+        };
+      }
+    );
+    this.setState({ arrayLanguageSkill: newSelectRadio });
+  };
+
+  handleAddAnother = () => {
+    this.setState({
+      arrayLanguageSkill: this.state.arrayLanguageSkill.concat([
+        {
+          select: "",
+          selectRadio: "",
+        },
+      ]),
+    });
+  };
+
+  handleDelete = (id: number) => (
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    this.setState({
+      arrayLanguageSkill: this.state.arrayLanguageSkill.filter(
+        (s, idx) => id !== idx
+      ),
+    });
   };
   render() {
     return (
-      <div>
-        <div className="content-select-language">
-          <p className="item-name padding-top-50">Language Skills</p>
-          <div className="select">
+      <div className="content-select-language">
+        <p className="item-name padding-top-50">Language Skills</p>
+        {this.state.arrayLanguageSkill.map((language, id) => (
+          <div className="select padding-top-20">
             <h6>Choose Language</h6>
             <select
               className="description-select description-item"
-              value={this.state.select}
-              onChange={(event) => this.handleSelectChange(event as any)}
+              value={language.select}
+              onChange={this.handleSelectChange(id)}
             >
               <option value="English">English</option>
               <option value="German">German</option>
@@ -48,57 +93,65 @@ class LanguageSkills extends React.Component {
                   <input
                     type="radio"
                     value="native speacker"
-                    checked={this.state.selected === "native speacker"}
-                    onChange={(event) => this.onValueChange(event)}
+                    checked={language.selectRadio === "native speacker"}
+                    onChange={this.onValueChange(id)}
                   />
                   <label> native speaker</label>
                   <br />
                   <input
                     type="radio"
                     value="near native/fluent"
-                    checked={this.state.selected === "near native/fluent"}
-                    onChange={(event) => this.onValueChange(event)}
+                    checked={language.selectRadio === "near native/fluent"}
+                    onChange={this.onValueChange(id)}
                   />
                   <label>near native/fluent</label>
                   <br />
                   <input
                     type="radio"
                     value="highly proficient"
-                    checked={this.state.selected === "highly proficient"}
-                    onChange={(event) => this.onValueChange(event)}
+                    checked={language.selectRadio === "highly proficient"}
+                    onChange={this.onValueChange(id)}
                   />
                   <label>highly proficient</label>
                   <br />
                   <input
                     type="radio"
                     value="very good overall"
-                    checked={this.state.selected === "very good overall"}
-                    onChange={(event) => this.onValueChange(event)}
+                    checked={language.selectRadio === "very good overall"}
+                    onChange={this.onValueChange(id)}
                   />
                   <label>very good overall</label>
                   <br />
                   <input
                     type="radio"
                     value="good working knowledge"
-                    checked={this.state.selected === "good working knowledge"}
-                    onChange={(event) => this.onValueChange(event)}
+                    checked={language.selectRadio === "good working knowledge"}
+                    onChange={this.onValueChange(id)}
                   />
                   <label>good working knowledge</label>
                   <br />
                   <input
                     type="radio"
                     value="working knowledge"
-                    checked={this.state.selected === "working knowledge"}
-                    onChange={(event) => this.onValueChange(event)}
+                    checked={language.selectRadio === "working knowledge"}
+                    onChange={this.onValueChange(id)}
                   />
                   <label>working knowledge</label>
                   <br />
                 </div>
               </div>
             </form>
-            <br />
-            <button className="add-another">Add Another</button>
+            <div className="padding-top-30">
+              <button onClick={this.handleDelete(id)} className="add-delete">
+                Delete
+              </button>
+            </div>
           </div>
+        ))}
+        <div className="padding-top-20">
+          <button onClick={this.handleAddAnother} className="add-another">
+            Add Another
+          </button>
         </div>
       </div>
     );

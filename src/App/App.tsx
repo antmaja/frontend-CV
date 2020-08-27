@@ -2,19 +2,18 @@ import React from "react";
 import Header from "../Header/header";
 import { Container, Row, Col } from "react-bootstrap";
 import CreateButton from "../Button/Button";
-import AddNameEmail from "../Information/AddNameEmail/NameEmail";
 import Resume from "../Information/AddResume/Resume";
 import Position from "../Information/AddPosition/Position";
 import AddImage from "../AddImage/AddImage";
 import PersonalInfo from "../BasicInformation/PersonalInfo/PersonalInfo";
 import Experience from "../BasicInformation/Experience/Experience";
 import LanguageSkills from "../BasicInformation/LanguageSkills/LanguageSkills";
+import AddNameEmail from "../Information/AddNameEmail/AddNameEmail";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        
         <Header />
         <Container>
           <CreateButton />
