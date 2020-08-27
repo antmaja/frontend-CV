@@ -1,6 +1,6 @@
 .add-photo {
-  min-width: 112px;
-  height: 16px;
+  min-width: 118px;
+  height: 31px;
   font-family: Nunito;
   font-stretch: normal;
   font-style: normal;
@@ -8,15 +8,13 @@
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  width: 118.7px;
-  height: 31px;
   border-radius: 4px;
   background-image: linear-gradient(to bottom, #6f6d6d, #242526 98%);
-  position: absolute;
-  top: 80%;
-  left: 30%;
 }
 
+.add-photo:focus {
+  outline: none;
+}
 .image-container img {
   width: 100%;
   height: auto;
@@ -52,7 +50,10 @@
   object-fit: cover;
   object-position: center;
 }
-
+.container-add-photo{
+  padding-top: 220px;
+  padding-left: 90px;
+}
 .delete {
   border: none;
   border-radius: 50%;

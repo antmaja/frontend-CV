@@ -38,9 +38,10 @@ class AddImage extends React.Component {
     return (
       <div className="image-container">
         <img src={imagePreviewUrl} alt="" />
+        <div className="container-add-photo">
         <button className="add-photo" onClick={() => this.fileInput.click()}>
           Add photo
-        </button>
+        </button></div>
         <button onClick={this.deleteImage} className="delete">
           X
         </button>
