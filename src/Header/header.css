@@ -1,0 +1,44 @@
+.container-fluid-rectangle {
+  min-height: 90px;
+  box-shadow: 0 2px 4px 0 rgba(0, 21, 240, 0.1);
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 19px;
+  font-family: Nunito;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.log-out-button {
+  border-radius: 25px;
+  background-color: #f2f6ff;
+  color: blue;
+  border: 2px #f2f6ff;
+  padding: 15px 40px;
+  font-family: Nunito;
+  font-size: 18px;
+  letter-spacing: normal;
+  color: #234cad;
+  outline: none;
+  outline-style: none;
+  border: none;
+}
+
+.log-out-button:focus {
+  outline: none;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./resume.css";
 import ResumeStateInterface from "./ResumeStateInterface";
 
 class Resume extends React.Component {
