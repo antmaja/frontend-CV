@@ -59,35 +59,35 @@ class Experience extends React.Component {
 
   render() {
     return (
-      <div className="padding-top-30">
+      <div className="container-experience">
         <p className="item-name title-experience">Experience</p>
         {this.state.arrayExperience.map((experience, id) => (
           <div key={id}>
-            <Form.Label style={{ paddingTop: "20px" }}>Years</Form.Label>
+            <Form.Label className="label-container">Years</Form.Label>
             <Form.Control
               type="text"
               placeholder="Add number"
-              style={{ width: "85%", height: "32px" }}
+              className="years-input"
               value={experience.years}
               onChange={this.handleInputYearsChange(id)}
             />
 
-            <Form.Label style={{ paddingTop: "20px" }}>Position</Form.Label>
+            <Form.Label className="label-container">Position</Form.Label>
             <Form.Control
               type="text"
               placeholder="Start typ"
               value={experience.position}
               onChange={this.handleInputPositionChange(id)}
-              style={{ width: "85%", height: "32px" }}
+              className="position-input"
             />
-            <div className="padding-top-30">
+            <div className="delete-container">
               <button onClick={this.handleRemove(id)} className="add-delete">
                 Delete
               </button>
             </div>
           </div>
         ))}
-        <div className="padding-top-20">
+        <div className="add-another-container">
           <button onClick={this.handleAddAnother} className="add-another">
             Add Another
           </button>

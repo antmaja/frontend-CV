@@ -68,9 +68,9 @@ class LanguageSkills extends React.Component {
   render() {
     return (
       <div className="content-select-language">
-        <p className="item-name padding-top-50">Language Skills</p>
+        <p className="item-name container-select-language">Language Skills</p>
         {this.state.arrayLanguageSkill.map((language, id) => (
-          <div className="select padding-top-20">
+          <div className="select container-select" key={id}>
             <h6>Choose Language</h6>
             <select
               className="description-select description-item"
@@ -141,14 +141,15 @@ class LanguageSkills extends React.Component {
                 </div>
               </div>
             </form>
-            <div className="padding-top-30">
+
+            <div className="delete-container">
               <button onClick={this.handleDelete(id)} className="add-delete">
                 Delete
               </button>
             </div>
           </div>
         ))}
-        <div className="padding-top-20">
+        <div className="add-another-container">
           <button onClick={this.handleAddAnother} className="add-another">
             Add Another
           </button>

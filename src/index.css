@@ -288,6 +288,9 @@ input:focus {
   font-size: 14px;
   color: #ffffff;
 }
+.add-delete:focus {
+  outline: none;
+}
 
 .description-select {
   width: 85%;
@@ -297,7 +300,7 @@ input:focus {
   background-color: #ffffff;
 }
 
-.padding-top-50 {
+.container-select-language {
   padding-top: 50px;
 }
 
@@ -313,11 +316,40 @@ input:focus {
   background-color: #ffffff;
 }
 
-
-.padding-top-30{
-  padding-top:30px;
+.delete-container {
+  padding-top: 30px;
 }
 
-.padding-top-20{
+.container-select {
   padding-top: 20px;
+}
+
+.add-another-container {
+  padding-top: 20px;
+}
+.container-experience {
+  padding-top: 30px;
+}
+
+.label-container{
+  padding-top: 15px;
+}
+
+.form-control.position-input {
+  width: 85px;
+  height: 32px;
+  min-width: 298px;
+}
+
+.form-control.years-input {
+  width: 85px;
+  height: 32px;
+  min-width: 298px;
+}
+
+
+.form-control.birth-place-input{
+  width: 85%; 
+  height: 32px;
+ 
 }

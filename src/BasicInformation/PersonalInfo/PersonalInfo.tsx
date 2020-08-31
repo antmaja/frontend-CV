@@ -27,20 +27,20 @@ class PersonalInfo extends React.Component {
         <div className="section-item">
           <p className="item-name">Personal info</p>
           <div className="description-title">
-            <Form.Group style={{ width: "85%" }}>
+            <Form.Group>
               <Form.Label>Born</Form.Label>
               <Calendar></Calendar>
             </Form.Group>
-            <Form.Group style={{ width: "85%" }}>
-              <Form.Label style={{ paddingTop: "20px" }}>
+            <Form.Group>
+              <Form.Label>
                 Birth place
               </Form.Label>
               <Form.Control
+                className="birth-place-input"
                 type="text"
                 placeholder="Start typ"
                 id="birth"
                 value={this.state.birth}
-                style={{ height: "32px" }}
                 onChange={(event) => this.fromInputChangeBirth(event as any)}
               />
             </Form.Group>
