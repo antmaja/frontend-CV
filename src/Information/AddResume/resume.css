@@ -1,0 +1,15 @@
+.resume-input {
+  margin: auto;
+  font-size: 58px;
+  font-family: Nunito;
+  border: none;
+  resize: none;
+}
+
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+.resume-input::placeholder {
+  color: #04143a;
+}

@@ -1,0 +1,38 @@
+.full-name-input::placeholder {
+  color: #04143a;
+}
+
+.full-name-input {
+  font-size: 58px;
+  font-family: Nunito;
+  border: none;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  border-radius: none;
+}
+
+.email-input::placeholder {
+  color: #04143a;
+}
+
+.email-input {
+  max-width: 22.1625rem;
+  max-height: 3.6875rem;
+  opacity: 0.5;
+  font-size: 28px;
+  font-family: Nunito;
+  border: none;
+  border-radius: none;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: 1px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}

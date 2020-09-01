@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Preview from "./Preview";
 import Save from "./Save";
+import "./button.css";
 
 class CreateButton extends React.Component {
   render() {

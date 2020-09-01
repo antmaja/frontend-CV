@@ -1,7 +1,6 @@
 import React from "react";
+import "./image.css";
 import ImageStateInterface from "./ImageStateInterface";
-
-
 
 class AddImage extends React.Component {
   state: ImageStateInterface;
@@ -30,7 +29,7 @@ class AddImage extends React.Component {
   };
 
   deleteImage = () => {
-    this.setState({ imagePreviewUrl: "" });
+    this.setState({ imagePreviewUrl: " " });
   };
 
   render() {
@@ -39,9 +38,10 @@ class AddImage extends React.Component {
     return (
       <div className="image-container">
         <img src={imagePreviewUrl} alt="" />
+        <div className="container-add-photo">
         <button className="add-photo" onClick={() => this.fileInput.click()}>
           Add photo
-        </button>
+        </button></div>
         <button onClick={this.deleteImage} className="delete">
           X
         </button>
