@@ -9,6 +9,7 @@ import PersonalInfo from "../BasicInformation/PersonalInfo/PersonalInfo";
 import Experience from "../BasicInformation/Experience/Experience";
 import LanguageSkills from "../BasicInformation/LanguageSkills/LanguageSkills";
 import AddNameEmail from "../Information/AddNameEmail/AddNameEmail";
+import Education from "../BasicInformation/Education/Education";
 
 class App extends React.Component {
   render() {
@@ -41,6 +42,7 @@ class App extends React.Component {
                 <PersonalInfo></PersonalInfo>
                 <Experience></Experience>
                 <LanguageSkills></LanguageSkills>
+                <Education></Education>
               </div>
             </Col>
           </Row>
