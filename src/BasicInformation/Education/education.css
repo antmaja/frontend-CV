@@ -1,0 +1,31 @@
+.container-education {
+  padding-top: 50px;
+}
+
+.form-control.education-input{
+  width: 85px;
+  min-width: 298px;
+  height: 32px;
+}
+
+.label-container{
+    padding-top: 15px;
+}
+
+.form-control.from-to-input{
+    width: 85%;
+    min-width: 134px;
+    height: 32px;
+}
+
+.from-control.col.container-to-input{
+    padding-right: 35px;
+}
+
+.container-delete{
+    padding-top:30px;
+}
+
+.container-add-another{
+    padding-top:20px;
+}
