@@ -20,14 +20,11 @@ class Biography extends React.Component {
     return (
       <div className="aside-biography">
         <p className="item-name">Biography</p>
-
         <Row className="padding-top-10">
           <Col md={11}>
-            {" "}
             <p>Add Biography</p>
           </Col>
           <Col md={1}>
-            {" "}
             <p>500</p>
           </Col>
         </Row>
