@@ -10,11 +10,16 @@ class Biography extends React.Component {
 
     this.state = {
       biography: "",
+      maxChar: 500,
+      numChar: 500,
     };
   }
 
   handleChangeBiography = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    this.setState({ biography: event.target.value });
+    const charCount = event.target.value.length;
+    const maxChar = this.state.maxChar;
+    const charLength = maxChar - charCount;
+    this.setState({ biography: event.target.value, numChar: charLength });
   };
   render() {
     return (
@@ -25,7 +30,7 @@ class Biography extends React.Component {
             <p>Add Biography</p>
           </Col>
           <Col md={1}>
-            <p>500</p>
+            <p>{this.state.numChar}</p>
           </Col>
         </Row>
         <textarea
