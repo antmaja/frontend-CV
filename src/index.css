@@ -61,7 +61,8 @@ input:focus {
   top: 30px;
 }
 
-.add-another {
+.add-another,
+.add-delete {
   min-width: 118.7px;
   height: 31px;
   font-family: Nunito;
@@ -70,3 +71,70 @@ input:focus {
   font-size: 14px;
   color: #ffffff;
 }
+<<<<<<< HEAD
+.add-delete:focus {
+  outline: none;
+}
+
+.description-select {
+  width: 85%;
+  height: 32px;
+  border-radius: 4px;
+  border: solid 1px #ced0da;
+  background-color: #ffffff;
+}
+
+.container-select-language {
+  padding-top: 50px;
+}
+
+.content-radio label {
+  margin: 5px;
+}
+
+.datepicker {
+  min-width: 292px;
+  height: 32px;
+  border-radius: 4px;
+  border: solid 1px #ced0da;
+  background-color: #ffffff;
+}
+
+.delete-container {
+  padding-top: 30px;
+}
+
+.container-select {
+  padding-top: 20px;
+}
+
+.add-another-container {
+  padding-top: 20px;
+}
+.container-experience {
+  padding-top: 30px;
+}
+
+.label-container{
+  padding-top: 15px;
+}
+
+.form-control.position-input {
+  width: 85px;
+  height: 32px;
+  min-width: 298px;
+}
+
+.form-control.years-input {
+  width: 85px;
+  height: 32px;
+  min-width: 298px;
+}
+
+
+.form-control.birth-place-input{
+  width: 85%; 
+  height: 32px;
+ 
+}
+

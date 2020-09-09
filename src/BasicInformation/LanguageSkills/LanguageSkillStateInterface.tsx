@@ -1,5 +1,9 @@
 interface LanguageSkillStateInterface {
-  select: string;
-  selected: string;
+  arrayLanguageSkill: [
+    {
+      select: string,
+      selectRadio: string
+    }
+  ];
 }
 export default LanguageSkillStateInterface;
