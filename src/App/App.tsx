@@ -10,6 +10,7 @@ import Experience from "../BasicInformation/Experience/Experience";
 import LanguageSkills from "../BasicInformation/LanguageSkills/LanguageSkills";
 import AddNameEmail from "../Information/AddNameEmail/AddNameEmail";
 
+
 class App extends React.Component {
   render() {
     return (
@@ -44,6 +45,7 @@ class App extends React.Component {
               </div>
             </Col>
           </Row>
+          
         </Container>
       </div>
     );
