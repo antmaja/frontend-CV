@@ -33,16 +33,6 @@
   background-color: #eef0f7;
 }
 
-.image-container {
-  width: 25%;
-  min-width: 295px;
-  height: 295px;
-  border-radius: 16.7px;
-  margin-top: 90px;
-  position: relative;
-  background-color: #eef0f7;
-}
-
 .image-container img {
   width: 100%;
   height: auto;
@@ -50,10 +40,12 @@
   object-fit: cover;
   object-position: center;
 }
-.container-add-photo{
+
+.container-add-photo {
   padding-top: 220px;
   padding-left: 90px;
 }
+
 .delete {
   border: none;
   border-radius: 50%;
