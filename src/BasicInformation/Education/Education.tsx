@@ -20,69 +20,17 @@ class Education extends React.Component {
     };
   }
 
-  handleChangeCollege = (id: number) => (
+  handleChangeInput = (id: number) => (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
-    const newCollege = this.state.arrayEducation.map((education, idx) => {
+    const newChangeInput = this.state.arrayEducation.map((education, idx) => {
       if (id !== idx) return education;
       return {
         ...education,
-        college: event.target.value,
+        [event.target.name]: event.target.value,
       };
     });
-    this.setState({ arrayEducation: newCollege });
-  };
-
-  handleChangeDegree = (id: number) => (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    const newDegree = this.state.arrayEducation.map((education, idx) => {
-      if (id !== idx) return education;
-      return {
-        ...education,
-        degree: event.target.value,
-      };
-    });
-    this.setState({ arrayEducation: newDegree });
-  };
-
-  handleChangeFiled = (id: number) => (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    const newFiled = this.state.arrayEducation.map((education, idx) => {
-      if (id !== idx) return education;
-      return {
-        ...education,
-        filed: event.target.value,
-      };
-    });
-    this.setState({ arrayEducation: newFiled });
-  };
-
-  handleChangeFrom = (id: number) => (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    const newFrom = this.state.arrayEducation.map((education, idx) => {
-      if (id !== idx) return education;
-      return {
-        ...education,
-        from: event.target.value,
-      };
-    });
-    this.setState({ arrayEducation: newFrom });
-  };
-
-  handleChangeTo = (id: number) => (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    const newTo = this.state.arrayEducation.map((education, idx) => {
-      if (id !== idx) return education;
-      return {
-        ...education,
-        to: event.target.value,
-      };
-    });
-    this.setState({ arrayEducation: newTo });
+    this.setState({ arrayEducation: newChangeInput });
   };
   handleAddAnother = () => {
     this.setState({
@@ -106,14 +54,15 @@ class Education extends React.Component {
       <div>
         <p className="item-name container-education">Education</p>
         {this.state.arrayEducation.map((education, id) => (
-          <div key={id}>
+          <div key={id} className="education-section">
             <Form.Label className="label-container">College/Scholls</Form.Label>
             <Form.Control
               type="text"
               placeholder="Add name"
               className="education-input"
               value={education.college}
-              onChange={this.handleChangeCollege(id)}
+              name="college"
+              onChange={this.handleChangeInput(id)}
             />
 
             <Form.Label className="label-container">Degree</Form.Label>
@@ -122,7 +71,8 @@ class Education extends React.Component {
               placeholder="Start typ"
               className="education-input"
               value={education.degree}
-              onChange={this.handleChangeDegree(id)}
+              name="degree"
+              onChange={this.handleChangeInput(id)}
             />
 
             <Form.Label className="label-container">Filed</Form.Label>
@@ -131,7 +81,8 @@ class Education extends React.Component {
               placeholder="Add filed"
               className="education-input"
               value={education.filed}
-              onChange={this.handleChangeFiled(id)}
+              name="filed"
+              onChange={this.handleChangeInput(id)}
             />
 
             <Form.Row>
@@ -142,7 +93,8 @@ class Education extends React.Component {
                   placeholder="Year"
                   className="from-to-input"
                   value={education.from}
-                  onChange={this.handleChangeFrom(id)}
+                  name="from"
+                  onChange={this.handleChangeInput(id)}
                 />
               </Form.Group>
               <Form.Group as={Col} style={{ paddingRight: 35 }}>
@@ -152,7 +104,8 @@ class Education extends React.Component {
                   placeholder="Year"
                   className="from-to-input"
                   value={education.to}
-                  onChange={this.handleChangeTo(id)}
+                  name="to"
+                  onChange={this.handleChangeInput(id)}
                 />
               </Form.Group>
             </Form.Row>
