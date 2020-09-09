@@ -16,31 +16,20 @@ class Experience extends React.Component {
       ],
     };
   }
-  handleInputYearsChange = (id: number) => (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    const newYears = this.state.arrayExperience.map((experience, idx) => {
-      if (id !== idx) return experience;
-      return {
-        ...experience,
-        years: event.target.value,
-      };
-    });
-    this.setState({ arrayExperience: newYears });
-  };
 
-  handleInputPositionChange = (id: number) => (
+  handleInputChange = (id: number) => (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     const newPosition = this.state.arrayExperience.map((experience, idx) => {
       if (id !== idx) return experience;
       return {
         ...experience,
-        position: event.target.value,
+        [event.target.name]: event.target.value,
       };
     });
     this.setState({ arrayExperience: newPosition });
   };
+
   handleAddAnother = () => {
     this.setState({
       arrayExperience: this.state.arrayExperience.concat([
@@ -69,15 +58,17 @@ class Experience extends React.Component {
               placeholder="Add number"
               className="years-input"
               value={experience.years}
-              onChange={this.handleInputYearsChange(id)}
+              name='years'
+              onChange={this.handleInputChange(id)}
             />
 
             <Form.Label className="label-container">Position</Form.Label>
             <Form.Control
               type="text"
               placeholder="Start typ"
+              name='position'
               value={experience.position}
-              onChange={this.handleInputPositionChange(id)}
+              onChange={this.handleInputChange(id)}
               className="position-input"
             />
             <div className="delete-container">
