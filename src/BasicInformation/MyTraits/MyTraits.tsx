@@ -16,16 +16,18 @@ class MyTraits extends React.Component {
   };
 
   handleInputKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.keyCode === 13) {
-      const { value } = event.target as HTMLInputElement;
+    switch(event.keyCode){
+      case 13:
+        const { value } = event.target as HTMLInputElement;
 
-      this.setState((state) => ({
-        myTraits: [...this.state.myTraits, value],
-        input: "",
-      }));
+        this.setState((state) => ({
+          myTraits: [...this.state.myTraits, value],
+          input: "",
+        }));
+      
     }
 
-    if (
+   /*  if (
       this.state.myTraits.length &&
       event.keyCode === 8 &&
       !this.state.input.length
@@ -33,8 +35,8 @@ class MyTraits extends React.Component {
       this.setState((state) => ({
         myTraits: this.state.myTraits.slice(0, this.state.myTraits.length - 1),
       }));
-    }
-  };
+    } */
+  }; 
 
   handleRemoveItem = (index: number) => {
     return () => {
