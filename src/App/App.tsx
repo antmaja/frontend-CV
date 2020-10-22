@@ -9,6 +9,7 @@ import PersonalInfo from "../BasicInformation/PersonalInfo/PersonalInfo";
 import Experience from "../BasicInformation/Experience/Experience";
 import LanguageSkills from "../BasicInformation/LanguageSkills/LanguageSkills";
 import AddNameEmail from "../Information/AddNameEmail/AddNameEmail";
+import Biography from "../BasicInformation/Biography/Biography";
 
 
 class App extends React.Component {
@@ -42,6 +43,11 @@ class App extends React.Component {
                 <PersonalInfo></PersonalInfo>
                 <Experience></Experience>
                 <LanguageSkills></LanguageSkills>
+              </div>
+            </Col>
+            <Col md={8}>
+              <div className="aside-container">
+                <Biography></Biography>
               </div>
             </Col>
           </Row>
